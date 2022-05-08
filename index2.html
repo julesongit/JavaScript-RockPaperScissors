@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  </head>
+<body>
+    <div class="container">
+        <header class="header">
+          <h1>Rock Paper Scissors</h1>
+          <p>Player 1 :</p> <input id="playerone"> <button onclick="editPlayer()">Edit Name</button>
+          <p>Player 2 :</p> <input id="playertwo"> <button onclick="editPlayer()">Edit Name</button>
+          <br/>
+          <button onclick="addname()">Play</button>
+          <br/>
+          <br/>
+          <button id="restart" class="restart-btn">Restart Game</button>
+          <div id="score" class="score">
+            <p id="playeronename"> Player 1 : 0</p>
+            <p id="playertwoname"> Player 2 : 0</p>
+          </div>
+          <div id="newscore" class="newscore">
+              <p>Draw: 0</p>
+              <p>Games Played: 0</p>
+          </div>
+        </header>
+        <h2>Make Your Selection</h2>
+        <div class="choices">
+          <!-- <i id="rock" class="choice fas fa-hand-rock fa-10x"></i>
+          <i id="paper" class="choice fas fa-hand-paper fa-10x"></i>
+          <i id="scissors" class="choice fas fa-hand-scissors fa-10x"></i> -->
+
+         <i class="choice"><img id="rock" src="https://t3.ftcdn.net/jpg/00/55/21/18/360_F_55211893_pMzGwbg4p7yElUGfc868m9dUXaknoWkU.jpg" height="
+            150"></i>
+          <i class="choice"><img id="paper" src="https://images.vexels.com/media/users/3/256349/isolated/preview/864c07d64db6ec24e19c39acb16f0a89-winking-piece-of-paper-cartoon.png" height="150"></i>
+          <i class="choice"><img id="scissors" src="https://clipart.world/wp-content/uploads/2020/06/cartoon-scissors.jpg" height="150"></i>
+
+        </div>
+      </div>
+  
+      <!-- Modal -->
+      <div class="modal">
+        <div id="result" class="modal-content"></div>
+      </div>
+</body>
+<script src="./rps player.js"></script>
+</html>
